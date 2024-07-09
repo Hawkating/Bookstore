@@ -1,0 +1,20 @@
+header{
+    display: flex;
+    align-items: center;
+    background-color: #082029;
+    padding: 15px 20px 15px 50px;
+    gap: 10px;
+}
+
+
+font{
+    color: #f36054;
+}
+
+
+.headline-logo{
+    height: 60px;
+}
+
+
+
