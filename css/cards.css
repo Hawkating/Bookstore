@@ -1,0 +1,278 @@
+#all-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #082029;
+    margin: 20px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 16px;
+}
+
+
+.bookpic {
+    height: 100px;
+}
+
+
+.pic {
+    height: 150px;
+    background-color: #114758;
+    box-shadow: inset 0 0 5em 0.2em #0a0a0a;
+}
+
+
+.table-price-likes td {
+    margin-top: 20px;
+    width: 200px;
+}
+
+
+.pic-heart {
+    height: 40px;
+}
+
+
+.pic-heart:hover {
+    cursor: pointer;
+}
+
+
+.send-button {
+    height: 30px;
+    margin-left: 16px;
+    filter: invert(22%) sepia(28%) saturate(1158%) hue-rotate(148deg) brightness(97%) contrast(95%);
+}
+
+
+.send-button:hover {
+    cursor: pointer;
+    filter: brightness(5);
+}
+
+
+.likes {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+
+
+.price {
+    color: #f36054;
+    font-size: x-large
+}
+
+
+.table-infos {
+    margin-left: 16px;
+}
+
+
+.table-infos-div {
+    width: 100%;
+    padding-bottom: 16px;
+}
+
+
+.textarea {
+    color: white;
+    resize: none;
+    width: 260px;
+    background-color: #143642;
+    border: none;
+    border-bottom: solid #3e6476;
+    height: 20px;
+
+    --sb-track-color: #08181f;
+    --sb-thumb-color: #6cb6d1;
+    --sb-size: 5px;
+}
+
+
+.textarea::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+
+.textarea::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 3px;
+}
+
+
+.textarea::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+}
+
+
+@supports not selector(::-webkit-scrollbar) {
+    .textarea {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+
+.textareaBox {
+    padding: 16px 0px 0px 0px;
+    ;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.table-data {
+    width: 150px;
+    vertical-align: top;
+}
+
+
+.commentsHeadline {
+    padding-top: 20px;
+    font-size: larger;
+    font-weight: bold;
+    width: 320px;
+    padding-bottom: 16px;
+    ;
+}
+
+
+.border-bottom {
+    border-bottom: solid #4e8ba0;
+    width: 360px;
+}
+
+
+.card-headline {
+    padding-bottom: 10px;
+}
+
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.commentsArea {
+    max-width: 320px;
+    white-space: pre-wrap;
+    height: 250px;
+    overflow-y: auto;
+
+    word-break: break-word;
+
+    --sb-track-color: #08181f;
+    --sb-thumb-color: #6cb6d1;
+    --sb-size: 5px;
+}
+
+
+.commentsArea table{
+    text-align: left;
+}
+
+
+.commentsArea::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+
+.commentsArea::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 3px;
+}
+
+
+.commentsArea::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+}
+
+
+@supports not selector(::-webkit-scrollbar) {
+    .commentsArea {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+
+@media (max-width: 380px) {
+    .card {
+        width: 260px;
+    }
+
+
+    .card-headline h2 {
+        font-size: medium;
+        max-width: 260px;
+    }
+
+
+    .border-bottom {
+        width: 300px;
+    }
+
+
+    .table-price-likes td {
+        margin-top: 10px;
+        width: 180px;
+    }
+
+
+    .price {
+        font-size: large;
+    }
+
+
+    .likes {
+        font-size: small;
+    }
+
+
+    .pic-heart {
+        height: 20px;
+    }
+
+
+    .table-infos-div {
+        font-size: small;
+        padding-bottom: 16px;
+    }
+
+
+    .commentsHeadline {
+        padding-top: 20px;
+        font-size: medium;
+        font-weight: bold;
+        width: 260px;
+        padding-bottom: 16px;
+        ;
+    }
+
+
+    .commentsArea {
+        max-width: 260px;
+        font-size: small;
+    }
+
+
+    .table-data {
+        width: 120px;
+        vertical-align: top;
+    }
+}

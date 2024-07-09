@@ -7,4 +7,34 @@ body{
     color: white;
     margin: 0px;
     background-color: #05171e;
+
+    --sb-track-color: #08181f;
+    --sb-thumb-color: #6cb6d1;
+    --sb-size: 5px;
+}
+
+
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 3px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+
+.d-none{
+    display:none;
 }
