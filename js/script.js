@@ -29,7 +29,7 @@ function renderComments(index){
     commentArea.innerHTML += `
     <table>
         <tr>
-            <td class="table-data">${books[index]["comments"][i]["name"]}</td><td class="table-data">:${books[index]["comments"][i]["comment"]}</td>
+            <td class="table-data">[${books[index]["comments"][i]["name"]}]</td><td class="table-data">:${books[index]["comments"][i]["comment"]}</td>
         </tr>
     </table>
     `;
